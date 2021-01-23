@@ -1,0 +1,55 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+	<head> 
+		<meta charset="UTF-8" /> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            .checked {
+                color: orange;
+            }
+        </style>
+        <title>E-Book store</title> 
+	</head> 
+	<body> 
+        
+        <h1>Welcome to Book Repo</h1> 
+        <h5>Listing the best books online</h5>
+        <h6 id="cartHead" style="display: none;"> Cart</h6>
+        <div class="row" id="head" style="padding: 2%;">
+            <div class="col-lg-4 mb-4"> 
+                <input type="text" placeholder="Search.." id="searchVal">
+                <button class="btn btn-primary" type="submit" onclick="search()">Go</button>
+            </div>
+
+            <div class="col-lg-4 mb-4"> 
+            <button class="btn btn-primary" onclick="sort()">Sort based on reviews</button>
+            </div>
+            
+            <div class="col-lg-4 mb-4"> 
+            <button class="btn btn-primary" onclick="displayCart()">Go to cart</button>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row" id="books">
+
+            </div>
+        </div>
+        <button class="btn btn-primary" id="checkoutButton" style="display: none; margin-left: 40%;">Checkout</button>
+        <!--sample card-->
+        <!--<div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Book title</h5>
+              <p class="card-subtitle mb-2 text-muted">Author</p>
+              <p>language</p>
+              <p class="card-text">ratings and stars</p>
+              <a href="#" class="btn btn-primary">Buy now</a>
+            </div>
+          </div>-->
+
+    
+        <script type="text/javascript" src="script.js"></script> 
+	</body> 
+</html> 
